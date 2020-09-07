@@ -1,0 +1,99 @@
+﻿@page "/postapplicant"
+@using Hsf.ApplicationProcess.August2020.Blazor.Data
+@inherits ApplicantCreateBase
+@inject IModalService modal
+
+<h1>Create an Applicant</h1>
+
+<p>This component demonstrates posting a data to a Web API.</p>
+
+<EditForm Model="@Applicant" OnValidSubmit="@SendValid">
+    <DataAnnotationsValidator />
+    <ValidationSummary />
+
+    <hr />
+    <div class="form-group row">
+        <label for="Name" class="col-sm-2 col-form-label">
+            First Name
+        </label>
+        <div class="col-sm-10">
+            <InputText id="Name" class="form-control" placeholder="First Name"
+                       @bind-Value="Applicant.Name" />
+            <ValidationMessage For="@(() =>Applicant.Name)" />
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="FamilyName" class="col-sm-2 col-form-label">
+            Family Name
+        </label>
+        <div class="col-sm-10">
+            <InputText id="FamilyName" class="form-control" placeholder="Family Name"
+                       @bind-Value="Applicant.FamilyName" />
+            <ValidationMessage For="@(() =>Applicant.FamilyName)" />
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="Address" class="col-sm-2 col-form-label">
+            Address
+        </label>
+        <div class="col-sm-10">
+            <InputText id="Address" class="form-control" placeholder="Address"
+                       @bind-Value="Applicant.Address" />
+            <ValidationMessage For="@(() =>Applicant.Address)" />
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="CountryOfOrigin" class="col-sm-2 col-form-label">
+            Country
+        </label>
+        <div class="col-sm-10">
+            <InputSelect id="CountryOfOrigin" class="form-group" placeholder="Country Of Origin"
+                         @bind-Value="Applicant.CountryOfOrigin">
+                @foreach (var item in Countries)
+                {
+                    <option>@item.Title</option>
+                }
+            </InputSelect>
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="EMailAddress" class="col-sm-2 col-form-label">
+            E-Mail Address
+        </label>
+        <div class="col-sm-10">
+            <InputText id="EMailAddress" class="form-control" placeholder="E-Mail Address"
+                       @bind-Value="Applicant.EmailAddress" />
+            <ValidationMessage For="@(() =>Applicant.EmailAddress)" />
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="Age" class="col-sm-2 col-form-label">
+            Age
+        </label>
+        <div class="col-sm-10">
+            <InputNumber id="Age" class="form-control" placeholder="Age"
+                         @bind-Value="Applicant.Age" />
+            <ValidationMessage For="@(() =>Applicant.Age)" />
+        </div>
+    </div>
+    <div class="form-group row">
+        <label for="Hired" class="col-sm-2 col-form-label">
+            Hired
+        </label>
+        <div class="col-md-1">
+            <InputCheckbox id="Hired" class="form-control" placeholder="Hired"
+                           @bind-Value="Applicant.Hired" />
+        </div>
+    </div>
+    <button class="btn btn-primary" @onclick="@(() => modal.Show<SuccessCreate>(""))" type="submit" disabled="@(!context.Validate())">Send</button>
+    <button class="btn btn-secondary" type="button" @onclick="Reset_Click">Reset</button>
+
+</EditForm>
+<Confirm ConfirmationChanged="ConfirmReset_Click" @ref="ResetConfirmation"></Confirm>
+@*@onclick="@(() => modal.Show<SuccessCreate>(""))"*@
+
+@code
+{
+
+
+}

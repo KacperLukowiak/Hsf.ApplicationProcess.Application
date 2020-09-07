@@ -1,0 +1,64 @@
+@page "/fetchdata"
+@using System.Net.Http
+@inject HttpClient Http
+<h1>Applicants</h1>
+
+<p>This component demonstrates fetching data from the server.</p>
+
+@if (applicants == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Name</th>
+                <th>Family Name</th>
+                <th>Address</th>
+                <th>Country of Origin</th>
+                <th>E-Mail Address</th>
+                <th>Age</th>
+                <th>Hired</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var applicant in applicants)
+            {
+            <tr>
+                <td>@applicant.Id</td>
+                <td>@applicant.Name</td>
+                <td>@applicant.FamilyName</td>
+                <td>@applicant.Address</td>
+                <td>@applicant.CountryOfOrigin</td>
+                <td>@applicant.EmailAddress</td>
+                <td>@applicant.Age</td>
+                <td>@applicant.Hired</td>
+            </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@code {
+    private Applicant[] applicants { get; set; }
+
+    protected override async Task OnInitializedAsync()
+    {
+        applicants = await Http.GetFromJsonAsync<Applicant[]>("https://localhost:44320/api/Applicants");
+    }
+
+    public class Applicant
+    {
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public string FamilyName { get; set; }
+        public string Address { get; set; }
+        public string CountryOfOrigin { get; set; }
+        public string EmailAddress { get; set; }
+        public int Age { get; set; }
+        public bool Hired { get; set; }
+    }
+}

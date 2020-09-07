@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Hsf.ApplicationProcess.August2020.Web</name>
+    </assembly>
+    <members>
+        <member name="M:Hsf.ApplicationProcess.August2020.Web.Controllers.ApplicantsController.GetApplicants">
+            <summary>
+            Gets the list of all Applicants.
+            </summary>
+            <returns>The list of Applicants</returns>
+        </member>
+        <member name="M:Hsf.ApplicationProcess.August2020.Web.Controllers.ApplicantsController.GetApplicant(System.Int32)">
+            <summary>
+            Gets a specific Applicant by id.
+            </summary>
+            <param name="id">Applicant id</param>
+            <returns> An Applicant. </returns>
+            <remarks>
+                GET api/Applicants
+                {
+                    "id": 1
+                }
+            </remarks>
+        </member>
+        <member name="M:Hsf.ApplicationProcess.August2020.Web.Controllers.ApplicantsController.PutApplicant(System.Int32,Hsf.ApplicationProcess.August2020.Domain.Models.Applicant)">
+            <summary>
+            Puts/Updates a new Applicant by id.
+            </summary>
+            <param name="id">Id of the applicant.</param>
+            <param name="applicant">Updated applicant parameters.</param>
+            <returns>Updated applicant.</returns>
+        </member>
+        <member name="M:Hsf.ApplicationProcess.August2020.Web.Controllers.ApplicantsController.PostApplicant(Hsf.ApplicationProcess.August2020.Domain.Models.Applicant)">
+             <summary>
+             Posts a new Applicant.
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 POST /Applicant
+                 {
+                    "name": "Kacper",
+                    "familyname": "Łukowiak",
+                    "address": "Kolejowa 57/9 Poznań",
+                    "countryoforigin": "Poland",
+                    "emailaddress": "kacperlukowiak@gmail.com",
+                    "age": 24,
+                    "hired": false
+                 }
+            
+             </remarks>
+             <param name="applicant"></param>
+             <returns>An Applicant.</returns>
+             <response code="201">Returns the newly created Applicant</response>
+             <response code="400">If the item is null</response> 
+        </member>
+        <member name="M:Hsf.ApplicationProcess.August2020.Web.Controllers.ApplicantsController.DeleteApplicant(System.Int32)">
+            <summary>
+            Deletes an Applicant by id.
+            </summary>
+            <returns>Status of deletion</returns>
+        </member>
+    </members>
+</doc>

@@ -1,0 +1,39 @@
+﻿@page "/applicants"
+
+@using Hsf.ApplicationProcess.August2020.Blazor.Data
+@inherits ApplicantListBase
+
+<h1>Applicants</h1>
+
+<p>This component demonstrates fetching data from a Web API.</p>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Family Name</th>
+            <th>Address</th>
+            <th>Country of Origin</th>
+            <th>E-Mail Address</th>
+            <th>Age</th>
+            <th>Hired</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var applicant in Applicants)
+        {
+        <tr>
+            <td>@applicant.Id</td>
+            <td>@applicant.Name</td>
+            <td>@applicant.FamilyName</td>
+            <td>@applicant.Address</td>
+            <td>@applicant.CountryOfOrigin</td>
+            <td>@applicant.EmailAddress</td>
+            <td>@applicant.Age</td>
+            <td>@applicant.Hired</td>
+        </tr>
+        }
+    </tbody>
+</table>
