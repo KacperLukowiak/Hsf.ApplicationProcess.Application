@@ -26,12 +26,16 @@ Blazor:
 Sending is only possible when all data is valid. Reset the form with reset button.
 
 How to build and run:
-
+(do it for both Web and Blazor)
 - dotnet restore
 - dotnet build
+----------------------------
+- make sure that Multiple Startup Projects is turned on for both Blazor and Web
 - dotnet run
 
-Make sure the localhost's ports match in Blazor and API, although they are configured correctly.
+
+In case of connection problem between API and Blazor, make sure the localhost's ports match in Blazor and API,
+although they are and should be configured correctly.
 
 Improvements in the future:
 - Reset button working only if something is written in the form
