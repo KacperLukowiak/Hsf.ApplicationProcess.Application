@@ -15,7 +15,7 @@ namespace Hsf.ApplicationProcess.August2020.Web
                 .Build();
 
             Log.Logger = new LoggerConfiguration()
-                .ReadFrom.Configuration(config)
+                .ReadFrom.Configuration(config) 
                 .CreateLogger();
 
             try

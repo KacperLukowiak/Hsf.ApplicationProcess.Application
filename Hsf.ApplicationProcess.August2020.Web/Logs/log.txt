@@ -3264,3 +3264,75 @@
 2020-09-07 14:02:42.307 +02:00 [INF] Executed action Hsf.ApplicationProcess.August2020.Web.Controllers.ApplicantsController.GetApplicants (Hsf.ApplicationProcess.August2020.Web) in 26.0872ms
 2020-09-07 14:02:42.307 +02:00 [INF] Executed endpoint 'Hsf.ApplicationProcess.August2020.Web.Controllers.ApplicantsController.GetApplicants (Hsf.ApplicationProcess.August2020.Web)'
 2020-09-07 14:02:42.307 +02:00 [INF] Request finished in 28.2899ms 200 application/json; charset=utf-8
+2020-09-09 20:57:38.511 +02:00 [INF] API is starting...
+2020-09-09 20:57:40.848 +02:00 [INF] User profile is available. Using 'C:\Users\KacperPC\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2020-09-09 20:57:41.938 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2020-09-09 20:57:41.938 +02:00 [INF] Hosting environment: Development
+2020-09-09 20:57:41.938 +02:00 [INF] Content root path: C:\Users\KacperPC\source\repos\Hsf.ApplicationProcess.Application\Hsf.ApplicationProcess.August2020.Web
+2020-09-09 20:57:42.032 +02:00 [INF] Request starting HTTP/2.0 GET https://localhost:44320/api/Applicants  
+2020-09-09 20:57:42.193 +02:00 [INF] Executing endpoint 'Hsf.ApplicationProcess.August2020.Web.Controllers.ApplicantsController.GetApplicants (Hsf.ApplicationProcess.August2020.Web)'
+2020-09-09 20:57:42.281 +02:00 [INF] Route matched with {action = "GetApplicants", controller = "Applicants"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Hsf.ApplicationProcess.August2020.Domain.Models.Applicant]]] GetApplicants() on controller Hsf.ApplicationProcess.August2020.Web.Controllers.ApplicantsController (Hsf.ApplicationProcess.August2020.Web).
+2020-09-09 20:57:42.910 +02:00 [INF] GetApplicants called.
+2020-09-09 20:57:43.727 +02:00 [INF] Entity Framework Core 3.1.7 initialized 'ApplicantContext' using provider 'Microsoft.EntityFrameworkCore.InMemory' with options: StoreName=ApplicantList 
+2020-09-09 20:57:43.913 +02:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Hsf.ApplicationProcess.August2020.Domain.Models.Applicant, Hsf.ApplicatonProcess.August2020.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-09-09 20:57:43.949 +02:00 [INF] Executed action Hsf.ApplicationProcess.August2020.Web.Controllers.ApplicantsController.GetApplicants (Hsf.ApplicationProcess.August2020.Web) in 1662.58ms
+2020-09-09 20:57:43.951 +02:00 [INF] Executed endpoint 'Hsf.ApplicationProcess.August2020.Web.Controllers.ApplicantsController.GetApplicants (Hsf.ApplicationProcess.August2020.Web)'
+2020-09-09 20:57:43.955 +02:00 [INF] Request finished in 1927.2691ms 200 application/json; charset=utf-8
+2020-09-09 20:57:44.097 +02:00 [INF] Request starting HTTP/2.0 GET https://localhost:44320/favicon.ico  
+2020-09-09 20:57:44.103 +02:00 [INF] HTTP GET /favicon.ico responded 404 in 0.8093 ms
+2020-09-09 20:57:44.106 +02:00 [INF] Request finished in 8.3734ms 404 
+2020-09-09 20:57:47.044 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:44320/api/Applicants  
+2020-09-09 20:57:47.045 +02:00 [INF] Executing endpoint 'Hsf.ApplicationProcess.August2020.Web.Controllers.ApplicantsController.GetApplicants (Hsf.ApplicationProcess.August2020.Web)'
+2020-09-09 20:57:47.046 +02:00 [INF] Route matched with {action = "GetApplicants", controller = "Applicants"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Hsf.ApplicationProcess.August2020.Domain.Models.Applicant]]] GetApplicants() on controller Hsf.ApplicationProcess.August2020.Web.Controllers.ApplicantsController (Hsf.ApplicationProcess.August2020.Web).
+2020-09-09 20:57:47.047 +02:00 [INF] GetApplicants called.
+2020-09-09 20:57:47.074 +02:00 [INF] Entity Framework Core 3.1.7 initialized 'ApplicantContext' using provider 'Microsoft.EntityFrameworkCore.InMemory' with options: StoreName=ApplicantList 
+2020-09-09 20:57:47.075 +02:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Hsf.ApplicationProcess.August2020.Domain.Models.Applicant, Hsf.ApplicatonProcess.August2020.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-09-09 20:57:47.077 +02:00 [INF] Executed action Hsf.ApplicationProcess.August2020.Web.Controllers.ApplicantsController.GetApplicants (Hsf.ApplicationProcess.August2020.Web) in 30.7286ms
+2020-09-09 20:57:47.077 +02:00 [INF] Executed endpoint 'Hsf.ApplicationProcess.August2020.Web.Controllers.ApplicantsController.GetApplicants (Hsf.ApplicationProcess.August2020.Web)'
+2020-09-09 20:57:47.077 +02:00 [INF] Request finished in 33.4591ms 200 application/json; charset=utf-8
+2020-09-09 20:57:56.926 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:44320/api/Applicants  
+2020-09-09 20:57:56.927 +02:00 [INF] Executing endpoint 'Hsf.ApplicationProcess.August2020.Web.Controllers.ApplicantsController.GetApplicants (Hsf.ApplicationProcess.August2020.Web)'
+2020-09-09 20:57:56.928 +02:00 [INF] Route matched with {action = "GetApplicants", controller = "Applicants"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Hsf.ApplicationProcess.August2020.Domain.Models.Applicant]]] GetApplicants() on controller Hsf.ApplicationProcess.August2020.Web.Controllers.ApplicantsController (Hsf.ApplicationProcess.August2020.Web).
+2020-09-09 20:57:56.933 +02:00 [INF] GetApplicants called.
+2020-09-09 20:57:56.940 +02:00 [INF] Entity Framework Core 3.1.7 initialized 'ApplicantContext' using provider 'Microsoft.EntityFrameworkCore.InMemory' with options: StoreName=ApplicantList 
+2020-09-09 20:57:56.944 +02:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Hsf.ApplicationProcess.August2020.Domain.Models.Applicant, Hsf.ApplicatonProcess.August2020.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-09-09 20:57:56.946 +02:00 [INF] Executed action Hsf.ApplicationProcess.August2020.Web.Controllers.ApplicantsController.GetApplicants (Hsf.ApplicationProcess.August2020.Web) in 17.383ms
+2020-09-09 20:57:56.946 +02:00 [INF] Executed endpoint 'Hsf.ApplicationProcess.August2020.Web.Controllers.ApplicantsController.GetApplicants (Hsf.ApplicationProcess.August2020.Web)'
+2020-09-09 20:57:56.947 +02:00 [INF] Request finished in 21.1973ms 200 application/json; charset=utf-8
+2020-09-09 20:57:59.943 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:44320/api/Applicants  
+2020-09-09 20:57:59.944 +02:00 [INF] Executing endpoint 'Hsf.ApplicationProcess.August2020.Web.Controllers.ApplicantsController.GetApplicants (Hsf.ApplicationProcess.August2020.Web)'
+2020-09-09 20:57:59.945 +02:00 [INF] Route matched with {action = "GetApplicants", controller = "Applicants"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Hsf.ApplicationProcess.August2020.Domain.Models.Applicant]]] GetApplicants() on controller Hsf.ApplicationProcess.August2020.Web.Controllers.ApplicantsController (Hsf.ApplicationProcess.August2020.Web).
+2020-09-09 20:57:59.946 +02:00 [INF] GetApplicants called.
+2020-09-09 20:57:59.947 +02:00 [INF] Entity Framework Core 3.1.7 initialized 'ApplicantContext' using provider 'Microsoft.EntityFrameworkCore.InMemory' with options: StoreName=ApplicantList 
+2020-09-09 20:57:59.948 +02:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Hsf.ApplicationProcess.August2020.Domain.Models.Applicant, Hsf.ApplicatonProcess.August2020.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-09-09 20:57:59.951 +02:00 [INF] Executed action Hsf.ApplicationProcess.August2020.Web.Controllers.ApplicantsController.GetApplicants (Hsf.ApplicationProcess.August2020.Web) in 5.5185ms
+2020-09-09 20:57:59.951 +02:00 [INF] Executed endpoint 'Hsf.ApplicationProcess.August2020.Web.Controllers.ApplicantsController.GetApplicants (Hsf.ApplicationProcess.August2020.Web)'
+2020-09-09 20:57:59.951 +02:00 [INF] Request finished in 9.6577ms 200 application/json; charset=utf-8
+2020-09-09 20:58:09.400 +02:00 [INF] Request starting HTTP/1.1 POST https://localhost:44320/api/Applicants application/json; charset=utf-8 171
+2020-09-09 20:58:09.401 +02:00 [INF] Executing endpoint 'Hsf.ApplicationProcess.August2020.Web.Controllers.ApplicantsController.PostApplicant (Hsf.ApplicationProcess.August2020.Web)'
+2020-09-09 20:58:09.416 +02:00 [INF] Route matched with {action = "PostApplicant", controller = "Applicants"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[Hsf.ApplicationProcess.August2020.Domain.Models.Applicant]] PostApplicant(Hsf.ApplicationProcess.August2020.Domain.Models.Applicant) on controller Hsf.ApplicationProcess.August2020.Web.Controllers.ApplicantsController (Hsf.ApplicationProcess.August2020.Web).
+2020-09-09 20:58:09.907 +02:00 [INF] PostApplicant called with following parameters:Name:Kacper  FamilyName:Łukowiak   Address:Kolejowa 57/9   CountryOfOrigin:Poland   EMailAddress:kacperlukowiak@gmail.com   Age:25    Hired:false 
+2020-09-09 20:58:09.908 +02:00 [INF] Entity Framework Core 3.1.7 initialized 'ApplicantContext' using provider 'Microsoft.EntityFrameworkCore.InMemory' with options: StoreName=ApplicantList 
+2020-09-09 20:58:10.021 +02:00 [INF] Saved 1 entities to in-memory store.
+2020-09-09 20:58:10.030 +02:00 [INF] Executing ObjectResult, writing value of type 'Hsf.ApplicationProcess.August2020.Domain.Models.Applicant'.
+2020-09-09 20:58:10.069 +02:00 [INF] Executed action Hsf.ApplicationProcess.August2020.Web.Controllers.ApplicantsController.PostApplicant (Hsf.ApplicationProcess.August2020.Web) in 653.1798ms
+2020-09-09 20:58:10.069 +02:00 [INF] Executed endpoint 'Hsf.ApplicationProcess.August2020.Web.Controllers.ApplicantsController.PostApplicant (Hsf.ApplicationProcess.August2020.Web)'
+2020-09-09 20:58:10.070 +02:00 [INF] Request finished in 669.7569ms 201 application/json; charset=utf-8
+2020-09-09 20:58:11.843 +02:00 [INF] Request starting HTTP/1.1 GET https://localhost:44320/api/Applicants  
+2020-09-09 20:58:11.843 +02:00 [INF] Executing endpoint 'Hsf.ApplicationProcess.August2020.Web.Controllers.ApplicantsController.GetApplicants (Hsf.ApplicationProcess.August2020.Web)'
+2020-09-09 20:58:11.844 +02:00 [INF] Route matched with {action = "GetApplicants", controller = "Applicants"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Hsf.ApplicationProcess.August2020.Domain.Models.Applicant]]] GetApplicants() on controller Hsf.ApplicationProcess.August2020.Web.Controllers.ApplicantsController (Hsf.ApplicationProcess.August2020.Web).
+2020-09-09 20:58:11.845 +02:00 [INF] GetApplicants called.
+2020-09-09 20:58:11.847 +02:00 [INF] Entity Framework Core 3.1.7 initialized 'ApplicantContext' using provider 'Microsoft.EntityFrameworkCore.InMemory' with options: StoreName=ApplicantList 
+2020-09-09 20:58:11.857 +02:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Hsf.ApplicationProcess.August2020.Domain.Models.Applicant, Hsf.ApplicatonProcess.August2020.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-09-09 20:58:11.861 +02:00 [INF] Executed action Hsf.ApplicationProcess.August2020.Web.Controllers.ApplicantsController.GetApplicants (Hsf.ApplicationProcess.August2020.Web) in 16.6744ms
+2020-09-09 20:58:11.861 +02:00 [INF] Executed endpoint 'Hsf.ApplicationProcess.August2020.Web.Controllers.ApplicantsController.GetApplicants (Hsf.ApplicationProcess.August2020.Web)'
+2020-09-09 20:58:11.861 +02:00 [INF] Request finished in 18.8764ms 200 application/json; charset=utf-8
+2020-09-09 20:58:29.122 +02:00 [INF] Request starting HTTP/2.0 GET https://localhost:44320/api/Applicants  
+2020-09-09 20:58:29.122 +02:00 [INF] Executing endpoint 'Hsf.ApplicationProcess.August2020.Web.Controllers.ApplicantsController.GetApplicants (Hsf.ApplicationProcess.August2020.Web)'
+2020-09-09 20:58:29.123 +02:00 [INF] Route matched with {action = "GetApplicants", controller = "Applicants"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.ActionResult`1[System.Collections.Generic.IEnumerable`1[Hsf.ApplicationProcess.August2020.Domain.Models.Applicant]]] GetApplicants() on controller Hsf.ApplicationProcess.August2020.Web.Controllers.ApplicantsController (Hsf.ApplicationProcess.August2020.Web).
+2020-09-09 20:58:29.123 +02:00 [INF] GetApplicants called.
+2020-09-09 20:58:29.124 +02:00 [INF] Entity Framework Core 3.1.7 initialized 'ApplicantContext' using provider 'Microsoft.EntityFrameworkCore.InMemory' with options: StoreName=ApplicantList 
+2020-09-09 20:58:29.125 +02:00 [INF] Executing ObjectResult, writing value of type 'System.Collections.Generic.List`1[[Hsf.ApplicationProcess.August2020.Domain.Models.Applicant, Hsf.ApplicatonProcess.August2020.Domain, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2020-09-09 20:58:29.126 +02:00 [INF] Executed action Hsf.ApplicationProcess.August2020.Web.Controllers.ApplicantsController.GetApplicants (Hsf.ApplicationProcess.August2020.Web) in 2.9784ms
+2020-09-09 20:58:29.126 +02:00 [INF] Executed endpoint 'Hsf.ApplicationProcess.August2020.Web.Controllers.ApplicantsController.GetApplicants (Hsf.ApplicationProcess.August2020.Web)'
+2020-09-09 20:58:29.126 +02:00 [INF] Request finished in 4.4775ms 200 application/json; charset=utf-8

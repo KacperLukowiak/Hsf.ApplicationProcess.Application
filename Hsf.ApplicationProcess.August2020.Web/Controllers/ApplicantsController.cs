@@ -9,7 +9,7 @@ using Microsoft.Extensions.Logging;
 
 namespace Hsf.ApplicationProcess.August2020.Web.Controllers
 {
-    [ApiController]
+    [ApiController] //indicates that the controller responds to web API requests
     [Produces("application/json")]
     [Route("api/Applicants")]
     public class ApplicantsController : ControllerBase
@@ -19,8 +19,8 @@ namespace Hsf.ApplicationProcess.August2020.Web.Controllers
 
         public ApplicantsController(ApplicantContext context, ILogger<ApplicantsController> logger)
         {
-            _context = context;
-            _logger = logger;
+            _context = context; //database context
+            _logger = logger; //logger
         }
 
         // GET: api/Applicants

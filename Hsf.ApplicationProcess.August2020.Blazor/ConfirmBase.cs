@@ -8,7 +8,7 @@ namespace Hsf.ApplicationProcess.August2020.Blazor
 {
     public class ConfirmBase : ComponentBase
     {
-        protected bool ShowConfirmation { get; set; }
+        protected bool ShowConfirmation { get; set; } //confirm.razor is only displayed if this is true
 
         public void Show()
         {
@@ -21,7 +21,7 @@ namespace Hsf.ApplicationProcess.August2020.Blazor
 
         protected async Task OnConfirmationChange(bool value)
         {
-            ShowConfirmation = false;
+            ShowConfirmation = false; //stop shoping the pop-up window
             await ConfirmationChanged.InvokeAsync(value);
         }
     }
