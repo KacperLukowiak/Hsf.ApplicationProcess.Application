@@ -10,5 +10,6 @@
         public string EmailAddress { get; set; }
         public int Age { get; set; }
         public bool Hired { get; set; }
+
     }
 }
